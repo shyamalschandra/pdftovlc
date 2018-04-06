@@ -1,6 +1,6 @@
 # PDF2VLC for iOS
 ## Version 0.1a (for macOS High Sierra Version 10.13.3)
-### by Shyamal Suhana Chandra, Copyright 2018, shyamalc@gmail.com
+### by Shyamal Suhana Chandra, shyamalc@gmail.com
 
 -----------
 
