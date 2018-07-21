@@ -8,7 +8,7 @@
 
 -----------
 
-**Prequisites:** Please install [Homebrew](https://brew.sh/) and do a `brew install pdftotext` before running this script.
+**Prequisites:** Please do a `pip install --user pdftotext` before running this script.
 
 Also, do a `chmod +x ./pdftovlc.sh` before running.
 
