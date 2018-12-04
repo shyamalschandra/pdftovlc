@@ -17,7 +17,7 @@ Also, do a `chmod +x ./pdftovlc.sh` before running.
 
 **Example argument list with the command:**
 
-`./pdftovlc.sh iOS <IP-ADDRESS-OF-VLC-SERVER>`
+`./pdftovlc.sh <IP-ADDRESS-OF-VLC-SERVER (e.g. 192.168.1.1)>`
 
 -----------
 
