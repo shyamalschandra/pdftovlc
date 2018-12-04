@@ -8,7 +8,10 @@
 
 -----------
 
-**Prequisites:** Please do a `pip install --user pdftotext` before running this script.
+**Prequisites:** 
+
+1. Please do a `brew install pkg-config poppler`.
+2. Please do a `pip install --user pdftotext` before running this script.
 
 Also, do a `chmod +x ./pdftovlc.sh` before running.
 
