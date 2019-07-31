@@ -10,7 +10,7 @@ pdftotext $FILE $TEXT_FILE
 echo "Remove Unicode parts"
 echo `iconv -c -f utf-8 -t ascii $TEXT_FILE` > $ASCII_TEXT_FILE
 echo "Remove Dots"
-cat $ASCII_TEXT_FILE | sed 's/\s/.\\g' > $NODOTS_TEXT_FILE
+cat $ASCII_TEXT_FILE | sed 's/\s.\\g' > $NODOTS_TEXT_FILE
 echo "Converting from text to AIFF"
 say --progress -r 300 -o $MUSIC_FILE -f $NODOTS_TEXT_FILE
 echo "Converting from AIFF to MP3"
