@@ -7,7 +7,7 @@ export FINISHED_MUSIC_FILE=`echo $FILE | cut -d "." -f1| awk '{print $0".mp3"}'`
 echo "Convert PDF to text"
 pdftotext $FILE $TEXT_FILE
 echo "Remove Unicode parts"
-echo `iconv -c -f utf-8 -t ascii $TEXT_FILE` >> $ASCII_TEXT_FILE
+echo `iconv -c -f utf-8 -t ascii $TEXT_FILE` > $ASCII_TEXT_FILE
 echo "Converting from text to AIFF"
 say --progress -r 300 -o $MUSIC_FILE -f $ASCII_TEXT_FILE
 echo "Converting from AIFF to MP3"
