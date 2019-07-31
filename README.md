@@ -1,5 +1,5 @@
 # PDF2VLC for iOS devices with VLC installed
-## Version 0.2a (for macOS High Sierra Version 10.14 Mojave)
+## Version 0.2a (for macOS 10.14 Mojave)
 ### by Shyamal Suhana Chandra, shyamalc@gmail.com
 
 -----------
@@ -11,9 +11,10 @@
 **Prequisites:** 
 
 1. Please do a `brew install pkg-config poppler`.
-2. Please do a `pip install --user pdftotext` before running this script.
+2. Please do a `sudo pip install --user pdftotext` before running this script.
+3. Please do a `brew install ffmpeg`.
 
-Also, do a `chmod +x ./pdftovlc.sh` before running.
+Also, do a `chmod +x pdftovlc.sh` before running.
 
 **Example argument list with the command:**
 
