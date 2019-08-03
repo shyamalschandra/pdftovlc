@@ -20,7 +20,7 @@ for each in "${chapters[@]}"
 do
   export AIFF_FILE=`echo $each | awk '{print $0".aiff"}'`
   export MP3_FILE=`echo $each | awk '{print $0".mp3"}'`
-  say --progress -r $1 -v $2 -o $AIFF_FILE -f $each
+  say --progress -r $1 -v Samantha -o $AIFF_FILE -f $each
   echo "Converting each split file from AIFF to MP3"
   ffmpeg -threads 4 -i $AIFF_FILE $MP3_FILE
   echo "Uploading MP3 to iOS device via VLC mobile app"
