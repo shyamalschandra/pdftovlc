@@ -22,7 +22,7 @@ do
   export MP3_FILE=`echo $each | awk '{print $0".mp3"}'`
   say --progress -r $1 -v $2 -o $AIFF_FILE -f $each
   echo "Converting each split file from AIFF to MP3"
-  ffmpeg -i -threads 4 $AIFF_FILE $MP3_FILE
+  ffmpeg -threads 4 -i $AIFF_FILE $MP3_FILE
   echo "Uploading MP3 to iOS device via VLC mobile app"
   curl --progress-bar --form "file[]=@$MP3_FILE" http://$1/upload.json | tee -a vlc-ios-upload.log; test ${PIPESTATUS[0]}
 done
