@@ -12,7 +12,7 @@ echo `iconv -c -f utf-8 -t ascii $TEXT_FILE` > $ASCII_TEXT_FILE
 echo "Remove Dots"
 cat $ASCII_TEXT_FILE | sed 's/\s.//g' > $NODOTS_TEXT_FILE
 echo "Converting from text to AIFF"
-say --progress -r $1 -o $MUSIC_FILE -f $NODOTS_TEXT_FILE
+say --progress -r $1 -v $2 -o $MUSIC_FILE -f $NODOTS_TEXT_FILE
 echo "Converting from AIFF to MP3"
 ffmpeg -i $MUSIC_FILE $FINISHED_MUSIC_FILE
 echo "Uploading MP3 to iOS device via VLC mobile app"
