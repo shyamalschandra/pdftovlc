@@ -16,7 +16,7 @@ echo "Splitting file into 250K pieces"
 split -b 250000 $NODOTS_TEXT_FILE $NODOTS_SPLIT_TEXT_FILE
 chapters=($(ls $NODOTS_SPLIT_TEXT_FILE*))
 echo "Converting from text to AIFF"
-for each in "{chapters[@]}"
+for each in "${chapters[@]}"
 do
   export AIFF_FILE=`echo $each | awk '{print $0".aiff"}'`
   export MP3_FILE=`echo $each | awk '{print $0".mp3"}'`
