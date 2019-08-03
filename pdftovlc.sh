@@ -5,7 +5,7 @@ export MUSIC_FILE=`echo $FILE | cut -d "." -f1| awk '{print $0".aiff"}'`
 export ASCII_TEXT_FILE=`echo $FILE | cut -d "." -f1| awk '{print $0"-ascii.txt"}'`
 export NODOTS_TEXT_FILE=`echo $FILE | cut -d "." -f1| awk '{print $0"-nodots.txt"}'`
 export FINISHED_MUSIC_FILE=`echo $FILE | cut -d "." -f1| awk '{print $0".mp3"}'`
-export NODOTS_SPLIT_TEXT_FILE=`echo $FILE | cut -d "." -f1| awk '{print $0"-nodots-chapter"}'`
+export NODOTS_SPLIT_TEXT_FILE=`echo $FILE | cut -d "." -f1| awk '{print $0"-nodots-chapter-"}'`
 echo "Convert PDF to text"
 pdftotext $FILE $TEXT_FILE
 echo "Remove Unicode parts"
