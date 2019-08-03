@@ -4,7 +4,7 @@
 
 -----------
 
-**Purpose:** This bash script for MacOS is used to convert the most latest created PDF in the same directory into a M4A by uploading onto an iOS device running VLC in the foreground or background.
+**Purpose:** This bash script for MacOS is used to convert the most latest created PDF in the same directory into multiple MP3's by uploading onto an iOS device running VLC in the foreground or background.
 
 -----------
 
