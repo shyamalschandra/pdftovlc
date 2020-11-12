@@ -8,7 +8,7 @@
 
 -----------
 
-**Prequisites:** 
+**Prerequisites:** 
 
 1. Please do a `brew install pkg-config poppler`.
 2. Please do a `sudo pip install --user pdftotext` before running this script.
