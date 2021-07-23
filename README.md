@@ -13,7 +13,7 @@
 1. Please do a `brew install pkg-config poppler`.
 2. Please do a `sudo pip install --user pdftotext` before running this script.
 3. Please do a `brew install ffmpeg`.
-4. Please install VLC for iOS/iPadOS @ https://apps.apple.com/us/app/vlc-for-mobile/id650377962.
+4. Please install VLC for [iOS/iPadOS](https://apps.apple.com/us/app/vlc-for-mobile/id650377962).
 5. Once VLC is installed, go to the Network, fourth in the bottom pane, and turn on 'Sharing via WiFI' and note the IP Address.
 6. Make sure your Mac CPU is Wifi enabled.
 
