@@ -1,5 +1,5 @@
 # PDF2VLC for iOS devices with VLC installed
-## Version 0.2d (for macOS 11)
+## Version 0.2e (for macOS 11)
 ### by Shyamal Suhana Chandra, shyamalc@gmail.com
 
 -----------
@@ -13,8 +13,11 @@
 1. Please do a `brew install pkg-config poppler`.
 2. Please do a `sudo pip install --user pdftotext` before running this script.
 3. Please do a `brew install ffmpeg`.
+4. Please install VLC for iOS/iPadOS @ https://apps.apple.com/us/app/vlc-for-mobile/id650377962.
+5. Once VLC is installed, go to the Network, fourth in the bottom pane, and turn on 'Sharing via WiFI' and note the IP Address.
+6. Make sure your Mac CPU is Wifi enabled.
 
-Also, do a `chmod +x pdftovlc.sh` before running.
+Also, do a `chmod +x pdftovlc.sh` when you get into the 'pdftovlc' folder before running.
 
 **Example argument list with the command:**
 
