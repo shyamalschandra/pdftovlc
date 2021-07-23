@@ -8,12 +8,14 @@ export FINISHED_MUSIC_FILE=`echo $FILE | cut -d "." -f1| awk '{print $0".mp3"}'`
 export NODOTS_SPLIT_TEXT_FILE=`echo $FILE | cut -d "." -f1| awk '{print $0"-nodots-chapter-"}'`
 echo "Convert PDF to text"
 pdftotext $FILE $TEXT_FILE
-echo "Remove Unicode parts"
-echo `iconv -c -f utf-8 -t ascii $TEXT_FILE` > $ASCII_TEXT_FILE
-echo "Remove Dots"
-cat $ASCII_TEXT_FILE | sed 's/\s.//g' > $NODOTS_TEXT_FILE
+#echo "Remove Unicode parts"
+#echo `iconv -c -f utf-8 -t ascii $TEXT_FILE` > $ASCII_TEXT_FILE
+#echo "Remove Dots"
+#cat $ASCII_TEXT_FILE | sed 's/\s.//g' > $NODOTS_TEXT_FILE
+#cat $TEXT_FILE | sed 's/\s.//g' > $NODOTS_TEXT_FILE
 echo "Splitting file into 250K pieces"
-split -b 250000 $NODOTS_TEXT_FILE $NODOTS_SPLIT_TEXT_FILE
+#split -b 250000 $NODOTS_TEXT_FILE $NODOTS_SPLIT_TEXT_FILE
+split -b 250000 $TEXT_FILE $NODOTS_SPLIT_TEXT_FILE
 chapters=($(ls $NODOTS_SPLIT_TEXT_FILE*))
 echo "Converting from text to AIFF"
 for each in "${chapters[@]}"
