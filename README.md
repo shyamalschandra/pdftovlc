@@ -21,7 +21,7 @@ Also, do a `chmod +x pdftovlc.sh` when you get into the 'pdftovlc' folder before
 
 **Example argument list with the command:**
 
-`./pdftovlc.sh <IP-ADDRESS-OF-VLC-SERVER (e.g. 192.168.1.1)> <Words per minute (e.g. 200)> <Voice Name on MacOS (e.g. Samantha)>`
+`./pdftovlc.sh <IP-ADDRESS-OF-IPHONE (Noted Above e.g. 192.168.1.1)> <Words per minute (e.g. 200)> <Voice Name on MacOS (e.g. Samantha)>`
 
 -----------
 
