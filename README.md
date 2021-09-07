@@ -1,5 +1,5 @@
 # PDF2VLC for iOS devices with VLC installed
-## Version 0.2e (for macOS 11)
+## Version 0.3 (for macOS 11.5.2 Big Sur)
 ### by Shyamal Suhana Chandra, shyamalc@gmail.com
 
 -----------
