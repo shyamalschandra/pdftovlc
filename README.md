@@ -10,6 +10,7 @@
 
 **Prerequisites:** 
 
+0. First, install [homebrew](https://brew.sh) and [pip](https://pip.pypa.io/en/stable/) on MacOS device.
 1. Please do a `brew install pkg-config poppler`.
 2. Please do a `sudo pip install --user pdftotext`.
 3. Please do a `brew install ffmpeg`.
