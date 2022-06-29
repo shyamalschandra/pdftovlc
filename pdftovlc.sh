@@ -19,6 +19,7 @@ do
   tts --text "`cat $each`" --out_path $AIFF_FILE
   echo "Converting each split file from AIFF to MP3"
   ffmpeg -y -threads 4 -i $AIFF_FILE $MP3_FILE
+  sleep 1
   echo "Uploading MP3 to iOS device via VLC mobile app"
   curl --progress-bar --form "file[]=@$MP3_FILE" http://$1/upload.json | tee -a vlc-ios-upload.log; test ${PIPESTATUS[0]}
 done
