@@ -17,9 +17,9 @@
 4. Please do a `sudo pip install --user numpy`.
 5. Run the following commands in this [comment](https://github.com/mozilla/TTS/issues/726#issuecomment-913570903).
 6. Please do a `sudo pip install --user TTS`.
-4. Please install VLC for [iOS/iPadOS](https://apps.apple.com/us/app/vlc-for-mobile/id650377962).
-5. Once VLC is installed, go to the Network, fourth in the bottom pane, and turn on 'Sharing via WiFI' and note the IP Address.
-6. Make sure your Mac CPU is Wifi enabled.
+7. Please install VLC for [iOS/iPadOS](https://apps.apple.com/us/app/vlc-for-mobile/id650377962).
+8. Once VLC is installed, go to the Network, fourth in the bottom pane, and turn on 'Sharing via WiFI' and note the IP Address.
+9. Make sure your Mac CPU is Wifi enabled.
 
 Also, do a `chmod +x pdftovlc.sh` when you get into the 'pdftovlc' folder before running.
 
