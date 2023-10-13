@@ -1,5 +1,5 @@
 # PDF2VLC for iOS devices with VLC installed
-## Version 0.3 (for macOS 14.0 Sonoma)
+## Version 0.4 (for macOS 14.0 Sonoma)
 ### by Shyamal Suhana Chandra, shyamalc@gmail.com
 
 -----------
