@@ -1,5 +1,5 @@
 # PDF2VLC for iOS devices with VLC installed
-## Version 0.3 (for macOS 11.5.2 Big Sur)
+## Version 0.3 (for macOS 14.0 Sonoma)
 ### by Shyamal Suhana Chandra, shyamalc@gmail.com
 
 -----------
@@ -15,11 +15,10 @@
 2. Please do a `sudo pip install --user pdftotext`.
 3. Please do a `brew install ffmpeg`.
 4. Please do a `sudo pip install --user numpy`.
-5. Run the following commands in this [comment](https://github.com/mozilla/TTS/issues/726#issuecomment-913570903).
-6. Please do a `sudo pip install --user TTS`.
-7. Please install VLC for [iOS/iPadOS](https://apps.apple.com/us/app/vlc-for-mobile/id650377962).
-8. Once VLC is installed, go to the Network, fourth in the bottom pane, and turn on 'Sharing via WiFI' and note the IP Address.
-9. Make sure your Mac CPU is Wifi enabled.
+5. Please install VLC for [iOS/iPadOS](https://apps.apple.com/us/app/vlc-for-mobile/id650377962).
+6. Once VLC is installed, go to the Network, fourth in the bottom pane, and turn on 'Sharing via WiFI' and note the IP Address.
+7. Make sure your Mac CPU is Wifi enabled.
+8. Make sure you go to Systems Settings->Accessibility->Spoken Content->System Voice and download and change to 'Zoe (Premium)'.
 
 Also, do a `chmod +x pdftovlc.sh` when you get into the 'pdftovlc' folder before running.
 
