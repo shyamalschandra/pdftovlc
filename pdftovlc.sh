@@ -14,12 +14,12 @@ chapters=($(ls $NODOTS_SPLIT_TEXT_FILE*))
 echo "Converting from text to AIFF"
 for each in "${chapters[@]}"
 do
-  export AIFF_FILE=`echo $each | awk '{print $0".wav"}'`
-  export MP3_FILE=`echo $each | awk '{print $0".mp3"}'`
-  tts --model_name tts_models/en/ljspeech/glow-tts --text "`cat $each`" --out_path $AIFF_FILE
-  echo "Converting each split file from AIFF to MP3"
-  ffmpeg -y -threads 4 -i $AIFF_FILE $MP3_FILE
-  sleep 1
-  echo "Uploading MP3 to iOS device via VLC mobile app"
-  curl --progress-bar --form "file[]=@$MP3_FILE" http://$1/upload.json | tee -a vlc-ios-upload.log; test ${PIPESTATUS[0]}
+  export AIFF_FILE=`echo $each | awk '{print $0".aiff"}'`
+  export OPUS_FILE=`echo $each | awk '{print $0".opus"}'`
+  say -v "Zoe (Premium)" -o $AIFF_FILE "`cat $each`"
+  echo "Converting each split file from AIFF to OPUS"
+  ffmpeg -y -threads 4 -i $AIFF_FILE -c:a libopus -b:a 96K $OPUS_FILE
+  wait
+  echo "Uploading OPUS to iOS device via VLC mobile app"
+  curl --progress-bar --form "file[]=@$OPUS_FILE" http://$1/upload.json | tee -a vlc-ios-upload.log; test ${PIPESTATUS[0]}
 done
